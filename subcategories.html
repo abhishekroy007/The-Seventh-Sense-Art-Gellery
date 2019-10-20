@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Seventh Sense</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+  <!-- font-family: 'Roboto Condensed', sans-serif; -->
+        
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"> 
+  <!--font-family: 'Yanone Kaffeesatz', sans-serif;-->
+  
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/subcategories.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+
+
+  <!--javascript/jquery-->
+      <script>
+            $(document).ready(function(){
+                $(".painting").click(function(){
+                $(".painting_options").toggle(400);
+                });
+            });
+
+            $(document).ready(function(){
+                $(".sketches").click(function(){
+                $(".sketches_options").toggle(400);
+                });
+            });
+
+            $(document).ready(function(){
+                $(".doodles").click(function(){
+                $(".doodles_options").toggle(400);
+                });
+            });
+
+            $(document).ready(function(){
+                $(".posters").click(function(){
+                $(".posters_options").toggle(400);
+                });
+            });
+
+            $(document).ready(function(){
+                $(".sculptures").click(function(){
+                $(".sculptures_options").toggle(400);
+                });
+            });
+            $(document).ready(function(){
+                $("#open_modal").click(function(){
+                $("#modal_wrap").show();
+                });
+            });
+      </script>
+
+</head>
+
+
+<body>
+<header>
+<div class="row">
+
+<nav class="navbar-inverse  topStrip">
+    <div class="container">
+        <div class="nav navbar-nav navbar-right " style="float: right;">
+         <a href = "#" id="open_modal"><span class="glyphicon glyphicon-user login"></span>&nbsp Login</a>&nbsp&nbsp
+         <a href = "signup.html"><span class="glyphicon glyphicon-log-in signup"></span> &nbspSignUp</a>
+        </div>
+    </div>
+  </nav>
+  <div id="modal_wrap">
+    <div id="login_modal" onmouseover="document.getElementById('login_close').style.display='block';" onmouseout="document.getElementById('login_close').style.display='none';">
+    
+        <img id = "login_close" onclick = "document.getElementById('modal_wrap').style.display='none';" src = "icon/button_close.png" alt="close" title="Close!">
+    
+        <span id = "login_welcome">Welcome Back!</span>
+    
+        <img id = "contact_chip" src = "icon/contact_chip_female.jpg" alt="Contact Chip">
+    
+        <form action = "" method="post">
+        <input id = "login_form"  type = "text" placeholder="username" required>
+        <input id = "login_form"  type = "password" placeholder="password" required>
+        <input id= "login_button"  type = "submit" value = "Login">
+        <a id = "forget_pass" href="" target="_blank">Forget Password?</a>
+        <a id = "signup" href="" target="_blank">Need An Account?</a>
+        </form>
+    
+    </div>
+  </div>
+
+</div>
+<div class="mainHeader">
+  <nav class = "nav navbar navbar-fixed" data-spy = "affix" data-offset-top = "30"> 
+    <div class="container-fuild">
+      <div class="row headerRow" >   
+           <div class="col-md-2 col-sm-2 col-xs-4">
+               <a href="index.html" class="pull-left"><img src="icon/Logo.jpg" height=100% width="100%" class="img-rounded img-responsive"></a> 
+           </div>
+        <div class="col-md-9  col-sm-6 col-xs-5">
+          <a class="navbar slogan" href="index.html" style="text-decoration:none;">Art For Every Home&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1" style="padding-top: 1%;">
+            <div class="input-group-btn">
+               <button class="btn btn-default" type="submit" style="border:0px;"><i class="glyphicon glyphicon-search"></i></button>
+               <a id="cart-popover" class="btn" data-placement="bottom" title="">
+               <span class="glyphicon glyphicon-shopping-cart "></span>
+               </a>
+            </div>
+        </div>
+      </div>
+      <div class="row Menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuNavBar" style="float: none;height:5px;font-size: 14px;position:relative;top:-10px;left:38%;">
+          Categories&nbsp<span class="caret"></span>
+          </button>
+          
+        </div>
+        <div class="collapse navbar-collapse" id="menuNavBar">
+           <ul class="nav navbar-nav navbar" style="text-align:center;">
+             <li><a href = "#" class="menuLinks">&nbspArtwork&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspHandcraft&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspAppreral&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspHome and Furnishing&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspCollectables&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspAccessories&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspGifts&nbsp</a></li>
+             <li><a href = "#" class="menuLinks">&nbspCustomize&nbsp</a></li>
+           </ul>       
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+</header>
+        <div class="container-fluid main_container">
+            <div class="conatiner category_name">ARTWORK</div>
+            <div class="conatiner">
+            <div class="row">
+                <div class="col-md-2 side_menu left">
+                    <dl class="side_menu_links">
+                        <dt class="painting"><div>Painting <span class="caret"></span></div></dt>
+                            <a href="#"><dd class="painting_options"> - Oil Painting</dd></a>
+                            <a href="#"><dd class="painting_options"> - Acrylic Painting</dd></a>
+                            <a href="#"><dd class="painting_options"> - Water Color</dd></a>
+                            <a href="#"><dd class="painting_options"> - Mix Media</dd></a>
+                            <br>
+                        <dt class="sketches"><div>Sketches <span class="caret"></span></div></dt>
+                            <a href="#"><dd class="sketches_options"> - Pencil</dd></a>
+                            <a href="#"><dd class="sketches_options"> - Charcoal</dd></a>
+                            <a href="#"><dd class="sketches_options"> - Marker</dd></a>
+                            <br>
+                        <dt class="doodles"><div>Doodles <span class="caret"></span></div></dt>
+                            <a href="#"><dd class="doodles_options"> - Pencil</dd></a>
+                            <a href="#"><dd class="doodles_options"> - Marker</dd></a>
+                            <br>
+                        <dt class="posters"><div>Posters <span class="caret"></span></div></dt>
+                            <a href="#"><dd class="posters_options"> - Oil</dd></a>
+                            <a href="#"><dd class="posters_options"> - Acrylic</dd></a>
+                            <a href="#"><dd class="posters_options"> - Water Color</dd></a>
+                            <a href="#"><dd class="posters_options"> - Mix Media</dd></a>
+                            <br>
+                        <dt><div>Calligraphy <span class="caret"></span></div></dt>
+
+                        <br>
+                        <dt class="sculptures"><div>Sculptures <span class="caret"></span></div></dt>
+                            <a href="#"><dd class="sculptures_options"> - Wood</dd></a>
+                            <a href="#"><dd class="sculptures_options"> - Metal</dd></a>
+                            <a href="#"><dd class="sculptures_options"> - Pop</dd></a>
+                            <br>
+                    </dl>
+                </div>
+                <div class="col-md-10 container_items right">
+                    <div class="row">
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image">
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image" >
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image" >
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image" >
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image">
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image" >
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image" >
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div  class="categories " align=center>
+                             <div class="picture-box" align=center>
+                                <img src="images/lion.jpg" class="categoriesBox" class="img-responsive"  align="center"  alt="First Image" >
+                                <p class="image-title">Lion</p>
+                              </div>   
+                          </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+            </div>
+        </div>
+        </div>
+        </div>
+
+<br><br><br><br><br>
+<footer style="border-top: 2px solid black; padding-top: 2%;" >
+   <div class="container-fuild" style="z-index: 10;">
+    <div class = "container footer">
+      <div class = "row">
+        <div class="col-md-3 footerColumn">
+          <h4>About Us</h4>
+          <br>
+          <h5>The Seventh Sense</h5><br><br>
+          <h5>Description</h5><br><br>
+          <h5 style="text-decoration: underline;">Payment Option</h5>
+            <img src="icon/paypal.png" class = "img-responsive social" title = "Like us" style="display:inline; width: 20px; height: 20px;">
+            <p style="display : inline;font-size: 14px; color: grey;">PayPal</p><br><br>
+            <img src="icon/paytm.png" class = "img-responsive social" title = "Like us" style="display:inline; width: 20px; height: 20px;">
+            <p style="display : inline;font-size: 14px; color: grey;">PayTm</p><br><br>
+        </div>
+
+        <div class="col-md-3" >
+           <h4>Contact Us</h4><br>
+           <img src="icon/location%20icon.png" class = "img-responsive social" title = "Like us" style="display:inline; width: 20px; height: 20px;">
+           <p style="display : inline;font-size: 14px; color: grey;">Jalandhar, India</p><br><br>
+
+           <img src="icon/contact.png" class = "img-responsive social" title = "Like us" style="display:inline; width: 20px; height: 20px;">
+           <p style="display : inline;font-size: 14px; color: grey;">+91 8284846494</p><br><br>
+ 
+           <img src="icon/email.jpeg" class = "img-responsive social" title = "Like us" style="display:inline; width: 20px; height: 20px;">
+           <p style="display : inline;font-size: 14px; color: grey;">Company Email</p>
+        </div>
+        <div class="col-md-3" ">
+        
+          <form class="navbar-form " role="search">
+            <h4>Search</h4>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search" id="search">
+                <div class="input-group-btn">
+                 <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+          </form>
+
+          <h4>NewsLetter</h4>
+            <input type="email" name="email" class="form-control" placeholder="Email" style="display:inline; padding: 10px; font : icon; width: 100%;"><br><br>
+            <input type="submit" name="submit" value="Submit" class="btn btn-success" style="width: 100%;">
+            <br><br>
+            <h5 style="text-decoration: underline;">Stay Connected</h5>
+            <img src="icon/social/fb.png" class = "img-responsive social" title = "Like us" style="display:inline;"><p style="display:inline; font-size: 14px; color: grey;"> Like us on Facebook</p><br><br>
+            <img src="icon/social/instagram.gif" class = "img-responsive social" title = "Share Us" style="display:inline;"><p style="display:inline; font-size: 14px; color: grey;"> Follow us on Instagram</p><br><br>
+        </div>
+        <div class="col-md-3" >
+        <h4>Be Upto Date</h4><br>
+         <input type="email" name="email" class="form-control" placeholder="Email" style="padding: 10px; font : icon; width: 100%;">
+        <br>
+         <input type="password" name="password" class="form-control" placeholder="Enter password" style="padding: 10px; font : icon; width: 100%;">
+        <br><br>
+        <input type="button" name="Sign In" value="Sign In" class="btn btn-success">
+        <br><br>
+        <p style="font-size: 12px; color: grey;">Sign Up Now For Exciting Deals!</p>
+        <input type="button" name="Sign Up" value="Sign Up" class="btn btn-primary">
+        <br>
+        </div>
+      </div>
+    </div>
+    <div class="container-fuild row" style="height:30px; background-color: black; top: 5px;">
+    
+    </div>
+  </footer>
+</body>
+</html>

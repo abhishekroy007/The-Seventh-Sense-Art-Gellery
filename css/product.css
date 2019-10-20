@@ -1,0 +1,123 @@
+  .ProductFrame{
+    padding:2% 5% 2% 5%;
+    background-color: white;
+    border:0px 2px 0px 2px solid black; 
+     z-index: 1;
+    }
+  .ProductPicture{
+    margin:1% 5% 1% 5%; 
+    background-color: white;
+    height:auto;
+    width: auto; 
+    display: inline-block;
+  }
+  .DetailFrame{
+    padding:5% 2% 5% 2%;
+    background-color: white;
+    z-index: 1;
+    }
+   .Pname{
+    font-size:35px;
+    color:black; 
+    background-color:white;
+    text-align:left;
+    padding:1px 2px 1px 2px ;
+    margin:5% 1% 1% 1%;  
+   } 
+   .Pprice{
+    font-size:35px;
+    color:black; 
+    background-color:white;
+    text-align: left;
+    padding:1px 2px 1px 2px ;
+    margin:1% ;  
+   } 
+   .Pdescription{
+    font-size:20px;
+    color:black; 
+    background-color:white;
+    text-align: left;
+    padding:1px 2px 1px 2px ;
+    margin:1% ;
+   }
+   .Pbuttons{
+    padding:2px 5px 2px 5px ;
+    margin:2% ;
+    border-top : 1px solid grey;
+    border-bottom: 2px solid black;
+    border-right:none;  
+    border-left:none; 
+    display: inline-block;
+    color:black; 
+    background-color:white ;
+    height:50px; 
+    width:100%;
+    }
+    .simpleText{
+    font-size:15px;
+    color:black; 
+    background-color:white;
+    text-align: left;
+    padding:1px 2px 1px 2px ;
+    margin:1% ;
+    }
+
+    /* Font sizes for different devices*/
+  /* Small devices (landscape phones, 544px and up) */
+    @media (min-width: 240px) 
+    {  
+        .Pprice{
+            font-size: 20px;
+        }
+        .Pname{
+            font-size: 20px;
+        }
+        .Pbuttons{
+            height:40px; 
+            width:80%;
+            font-size:14px;
+        }
+    }
+    @media (min-width: 480px) 
+    {  
+        .Pprice{
+            font-size: 35px;
+        }
+        .Pname{
+            font-size: 35px;
+        }
+
+    }
+    /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+    @media (min-width: 768px) 
+    {  
+        #Pprice{
+            font-size: 35px;
+        }
+        #Pname{
+            font-size: 35px;
+        }
+        #Pprice{
+            font-size: 20px;
+        }
+        #Pname{
+            font-size: 20px;
+        }
+        .Pbuttons{
+            height:50px; 
+            width:90%;
+            font-size:16px;
+        }
+    }
+ 
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) 
+    { 
+
+    }
+ 
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) 
+    {     
+
+    }

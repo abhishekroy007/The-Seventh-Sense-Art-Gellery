@@ -1,0 +1,58 @@
+/*********************************footer******************************/
+.footer{
+  position: relative;
+  top: 70%;
+  background-color: white;
+  height: 30%;
+  }
+
+.footerColumn{
+  padding-left: 2%; 
+  font-size: 16px;
+}
+
+p{
+   white-space: pre-wrap;
+   color: black;
+ }
+       
+.social{
+   width:30px;
+   height:30px;
+   border-radius: 15%;
+   background-color: transparent;
+   cursor: pointer;
+   opacity: 1;
+   transition: 0.4s;
+   }
+#social:hover{
+  opacity: 0.2;
+  }
+
+  /* Font sizes for different devices*/
+  /* Small devices (landscape phones, 544px and up) */
+    @media (min-width: 240px) 
+    {  
+ 
+    }
+    @media (min-width: 480px) 
+    {  
+ 
+    }
+    /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+    @media (min-width: 768px) 
+    {  
+ 
+    }
+ 
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) 
+    { 
+ 
+    }
+ 
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) 
+    {     
+ 
+    }
